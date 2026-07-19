@@ -152,173 +152,87 @@
         </div>
     </section>
 
-<section class="AI-gen" id="schedule">
-    <div class="schedule-wrap">
-        <div class="schedule-header">
-            <h1>Three Days, Mapped Out</h1>
-            <p>No filler tracks. Pick a day below to see exactly what's running.</p>
+<section class="AI-gen" id="hackathon">
+    <div class="hack-wrap">
+        <div class="hack-header">
+            <span class="hack-kicker">$ ./join-hackathon.sh</span>
+            <h1>Build Something in 48 Hours</h1>
+            <p class="hack-sub">One weekend. Real prizes. Ship or go home.</p>
         </div>
 
-        <div class="schedule-tabs" role="tablist">
-            <button class="schedule-tab active" data-day="1" role="tab" aria-selected="true">Day 1 · Oct 12</button>
-            <button class="schedule-tab" data-day="2" role="tab" aria-selected="false">Day 2 · Oct 13</button>
-            <button class="schedule-tab" data-day="3" role="tab" aria-selected="false">Day 3 · Oct 14</button>
-        </div>
+        <div class="hack-window">
+            <input type="radio" name="hack-tabs" id="tab-rules" class="hack-input" checked>
+            <input type="radio" name="hack-tabs" id="tab-prizes" class="hack-input">
+            <input type="radio" name="hack-tabs" id="tab-tracks" class="hack-input">
+            <input type="radio" name="hack-tabs" id="tab-schedule" class="hack-input">
 
-        <div class="schedule-panels">
-            <div class="schedule-panel active" data-day="1">
-                <div class="schedule-timeline">
-                    <div class="schedule-row">
-                        <span class="schedule-time">09:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-aiml">AI / ML</span>
-                            <h3>Opening Keynote: The Next Training Run</h3>
-                            <p>What actually changes when context windows stop being the bottleneck.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">10:45</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
-                            <h3>Workshop: Shipping Agents to Production</h3>
-                            <p>A hands-on session on rollout strategy, sandboxing, and rollback for autonomous systems.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">13:30</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-frontend">FRONTEND</span>
-                            <h3>Rendering at the Edge</h3>
-                            <p>Pushing UI compute closer to the user without breaking your build pipeline.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">15:30</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-security">SECURITY</span>
-                            <h3>Panel: Who Owns the Model?</h3>
-                            <p>Governance, audit trails, and accountability as systems get more autonomous.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">17:30</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <h3>Welcome Reception</h3>
-                            <p>Drinks, name tags, and the first round of hallway conversations.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="hack-titlebar">
+                <span class="hack-dot hack-dot-red"></span>
+                <span class="hack-dot hack-dot-yellow"></span>
+                <span class="hack-dot hack-dot-green"></span>
+                <span class="hack-titlebar-name">~/devconf/hackathon</span>
             </div>
 
-            <div class="schedule-panel" data-day="2">
-                <div class="schedule-timeline">
-                    <div class="schedule-row">
-                        <span class="schedule-time">09:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-aiml">AI / ML</span>
-                            <h3>Context Windows Are Not Memory</h3>
-                            <p>Why long-context models still forget the things that matter, and what to do about it.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">11:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
-                            <h3>Workshop: Zero-Downtime Kubernetes Migrations</h3>
-                            <p>Moving live traffic between clusters without anyone noticing.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">13:30</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-frontend">FRONTEND</span>
-                            <h3>Design Systems That Survive Contact With Product</h3>
-                            <p>Building component libraries that hold up once real deadlines hit.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">16:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-security">SECURITY</span>
-                            <h3>Prompt Injection in the Wild</h3>
-                            <p>Real attack cases against production agents, and the mitigations that held.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="hack-tabbar">
+                <label for="tab-rules" class="hack-tab hack-tab-rules">rules.md</label>
+                <label for="tab-prizes" class="hack-tab hack-tab-prizes">prizes.json</label>
+                <label for="tab-tracks" class="hack-tab hack-tab-tracks">tracks.yaml</label>
+                <label for="tab-schedule" class="hack-tab hack-tab-schedule">schedule.log</label>
             </div>
 
-            <div class="schedule-panel" data-day="3">
-                <div class="schedule-timeline">
-                    <div class="schedule-row">
-                        <span class="schedule-time">09:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-aiml">AI / ML</span>
-                            <h3>Fireside Chat: Building AI Products People Trust</h3>
-                            <p>A closing conversation on shipping responsibly at scale.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">11:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
-                            <h3>Infra for a Trillion Tokens a Day</h3>
-                            <p>Capacity planning and cost control lessons from teams running at real scale.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">13:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <span class="schedule-tag tag-frontend">FRONTEND</span>
-                            <h3>Workshop: Component Libraries at Scale</h3>
-                            <p>Versioning, theming, and deprecating components without breaking every team downstream.</p>
-                        </div>
-                    </div>
-                    <div class="schedule-row">
-                        <span class="schedule-time">15:00</span>
-                        <span class="schedule-dot"></span>
-                        <div class="schedule-card">
-                            <h3>Closing Remarks &amp; Swag Pickup</h3>
-                            <p>Final notes from the organizers, and one last chance to grab a shirt in your size.</p>
-                        </div>
-                    </div>
+            <div class="hack-body">
+
+                <div class="hack-panel panel-rules">
+                    <div class="code-line"><span class="ln"></span><span class="code code-heading"># DevConf Hackathon 2026</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">-</span> Teams of up to 4. Solo builders welcome too.</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">-</span> Ship a live demo &mdash; slide decks don't count.</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">-</span> AI copilots are fully allowed. Use what you'd use at work.</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">-</span> Judged on technical depth, execution, and real-world use.</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code code-comment">// bring a laptop, a charger, and a bad idea worth trying</span><span class="hack-cursor"></span></div>
                 </div>
+
+                <div class="hack-panel panel-prizes">
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">{</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-key">"grand_prize"</span><span class="code-punct">:</span> <span class="code-string">"$10,000"</span><span class="code-punct">,</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-key">"runner_up"</span><span class="code-punct">:</span> <span class="code-string">"$5,000"</span><span class="code-punct">,</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-key">"best_ai_track"</span><span class="code-punct">:</span> <span class="code-string">"$2,500"</span><span class="code-punct">,</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-key">"best_design"</span><span class="code-punct">:</span> <span class="code-string">"$1,500"</span><span class="code-punct">,</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-key">"audience_choice"</span><span class="code-punct">:</span> <span class="code-string">"front-row seats, DevConf 2027"</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-punct">}</span></span><span class="hack-cursor"></span></div>
+                </div>
+
+                <div class="hack-panel panel-tracks">
+                    <div class="code-line"><span class="ln"></span><span class="code code-key">tracks<span class="code-punct">:</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-punct">-</span> <span class="code-key">name<span class="code-punct">:</span></span> <span class="code-string">Agentic Tools</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">for<span class="code-punct">:</span></span> builders shipping autonomous workflows</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-punct">-</span> <span class="code-key">name<span class="code-punct">:</span></span> <span class="code-string">Dev Experience</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">for<span class="code-punct">:</span></span> better tooling, faster feedback loops</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-punct">-</span> <span class="code-key">name<span class="code-punct">:</span></span> <span class="code-string">Climate &amp; Infra</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">for<span class="code-punct">:</span></span> systems that scale responsibly</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;<span class="code-punct">-</span> <span class="code-key">name<span class="code-punct">:</span></span> <span class="code-string">Wildcard</span></span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">for<span class="code-punct">:</span></span> anything that makes us say "wait, how?"</span><span class="hack-cursor"></span></div>
+                </div>
+
+                <div class="hack-panel panel-schedule">
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-tag-muted">[Fri 18:00]</span> <span class="code-tag-event">EVENT</span>    Hacking opens &mdash; grab a table, meet your team</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-tag-muted">[Sat 09:00]</span> <span class="code-tag-reminder">REMINDER</span> Mentors on the floor all day</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-tag-muted">[Sat 22:00]</span> <span class="code-tag-warn">WARNING</span>  Submissions lock in 12 hours</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-tag-muted">[Sun 10:00]</span> <span class="code-tag-deadline">DEADLINE</span> Code freeze &mdash; submit your repo</span></div>
+                    <div class="code-line"><span class="ln"></span><span class="code"><span class="code-tag-muted">[Sun 15:00]</span> <span class="code-tag-event">EVENT</span>    Demos + judging, main stage</span><span class="hack-cursor"></span></div>
+                </div>
+
             </div>
         </div>
+
+        <div class="hack-cta">
+            <span class="hack-prompt">guest@devconf:~$</span>
+            <button class="cmn-btn hack-register">./register --team</button>
+        </div>
+        <p class="hack-finePrint">Free to enter &nbsp;·&nbsp; Open to all attendees &nbsp;·&nbsp; No experience required</p>
     </div>
 </section>
-
-<script>
-    (function () {
-        var tabs = document.querySelectorAll('.schedule-tab');
-        var panels = document.querySelectorAll('.schedule-panel');
-        tabs.forEach(function (tab) {
-            tab.addEventListener('click', function () {
-                var day = tab.getAttribute('data-day');
-                tabs.forEach(function (t) {
-                    t.classList.remove('active');
-                    t.setAttribute('aria-selected', 'false');
-                });
-                tab.classList.add('active');
-                tab.setAttribute('aria-selected', 'true');
-                panels.forEach(function (p) {
-                    p.classList.toggle('active', p.getAttribute('data-day') === day);
-                });
-            });
-        });
-    })();
-</script>
 
 <footer class="footer">
     <div class="footer-container">
