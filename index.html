@@ -152,9 +152,173 @@
         </div>
     </section>
 
-<section class="AI-gen">
+<section class="AI-gen" id="schedule">
+    <div class="schedule-wrap">
+        <div class="schedule-header">
+            <h1>Three Days, Mapped Out</h1>
+            <p>No filler tracks. Pick a day below to see exactly what's running.</p>
+        </div>
 
+        <div class="schedule-tabs" role="tablist">
+            <button class="schedule-tab active" data-day="1" role="tab" aria-selected="true">Day 1 · Oct 12</button>
+            <button class="schedule-tab" data-day="2" role="tab" aria-selected="false">Day 2 · Oct 13</button>
+            <button class="schedule-tab" data-day="3" role="tab" aria-selected="false">Day 3 · Oct 14</button>
+        </div>
+
+        <div class="schedule-panels">
+            <div class="schedule-panel active" data-day="1">
+                <div class="schedule-timeline">
+                    <div class="schedule-row">
+                        <span class="schedule-time">09:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-aiml">AI / ML</span>
+                            <h3>Opening Keynote: The Next Training Run</h3>
+                            <p>What actually changes when context windows stop being the bottleneck.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">10:45</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
+                            <h3>Workshop: Shipping Agents to Production</h3>
+                            <p>A hands-on session on rollout strategy, sandboxing, and rollback for autonomous systems.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">13:30</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-frontend">FRONTEND</span>
+                            <h3>Rendering at the Edge</h3>
+                            <p>Pushing UI compute closer to the user without breaking your build pipeline.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">15:30</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-security">SECURITY</span>
+                            <h3>Panel: Who Owns the Model?</h3>
+                            <p>Governance, audit trails, and accountability as systems get more autonomous.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">17:30</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <h3>Welcome Reception</h3>
+                            <p>Drinks, name tags, and the first round of hallway conversations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-panel" data-day="2">
+                <div class="schedule-timeline">
+                    <div class="schedule-row">
+                        <span class="schedule-time">09:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-aiml">AI / ML</span>
+                            <h3>Context Windows Are Not Memory</h3>
+                            <p>Why long-context models still forget the things that matter, and what to do about it.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
+                            <h3>Workshop: Zero-Downtime Kubernetes Migrations</h3>
+                            <p>Moving live traffic between clusters without anyone noticing.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">13:30</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-frontend">FRONTEND</span>
+                            <h3>Design Systems That Survive Contact With Product</h3>
+                            <p>Building component libraries that hold up once real deadlines hit.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">16:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-security">SECURITY</span>
+                            <h3>Prompt Injection in the Wild</h3>
+                            <p>Real attack cases against production agents, and the mitigations that held.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-panel" data-day="3">
+                <div class="schedule-timeline">
+                    <div class="schedule-row">
+                        <span class="schedule-time">09:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-aiml">AI / ML</span>
+                            <h3>Fireside Chat: Building AI Products People Trust</h3>
+                            <p>A closing conversation on shipping responsibly at scale.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-cloud">CLOUD &amp; DEVOPS</span>
+                            <h3>Infra for a Trillion Tokens a Day</h3>
+                            <p>Capacity planning and cost control lessons from teams running at real scale.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">13:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <span class="schedule-tag tag-frontend">FRONTEND</span>
+                            <h3>Workshop: Component Libraries at Scale</h3>
+                            <p>Versioning, theming, and deprecating components without breaking every team downstream.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-time">15:00</span>
+                        <span class="schedule-dot"></span>
+                        <div class="schedule-card">
+                            <h3>Closing Remarks &amp; Swag Pickup</h3>
+                            <p>Final notes from the organizers, and one last chance to grab a shirt in your size.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    (function () {
+        var tabs = document.querySelectorAll('.schedule-tab');
+        var panels = document.querySelectorAll('.schedule-panel');
+        tabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                var day = tab.getAttribute('data-day');
+                tabs.forEach(function (t) {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+                panels.forEach(function (p) {
+                    p.classList.toggle('active', p.getAttribute('data-day') === day);
+                });
+            });
+        });
+    })();
+</script>
 
 <footer class="footer">
     <div class="footer-container">
